@@ -1,6 +1,6 @@
 # shopping-list-creator
 
-This template should help get you started developing with Vue 3 in Vite.
+Shopping list creator build with Pinia.
 
 ## Recommended IDE Setup
 

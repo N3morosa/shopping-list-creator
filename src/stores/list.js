@@ -2,7 +2,6 @@ import { defineStore } from 'pinia';
 
 export const useListStore = defineStore('list', {
   state: () => ({
-    // item: { id: Math.random(Math.floor * 1000), text: '', isBought: false },
     listItem: []
   }),
   actions: {
@@ -10,13 +9,14 @@ export const useListStore = defineStore('list', {
       if (!text) {
         return;
       }
-
       this.listItem.push({
         id: Math.random(Math.floor() * 10000),
         text,
         isBought: false
       });
-      console.log('list', this.listItem);
+    },
+    removeItem(id) {
+      this.listItem = this.listItem.filter((item) => id !== item.id);
     }
   }
 });

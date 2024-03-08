@@ -1,7 +1,7 @@
 <script setup>
-import TheForm from './components/TheForm.vue';
+import ShoppingListCreator from '@/components/ShoppingListCreator.vue';
 </script>
 
 <template>
-  <TheForm />
+  <ShoppingListCreator />
 </template>
